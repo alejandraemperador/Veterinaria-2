@@ -59,10 +59,11 @@
     justify-content: flex-end;
     padding-top: 100px;
     height: 450px ;
-    background-color: red;
     gap: 20px;
-
-    h1, p{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(slide1-parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
         color:white;
     }
 
@@ -83,25 +84,83 @@
     }
 }
 
-.quality {
-    display: flex;
-    background: #f8f8f8;
-    padding: 50px 20px;
-    flex-direction: column;
-}
-.quality h1 {
-    font-size: 36px;
-}
-.quality p {
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-.contactus {
-    background: #e91e63;
+.call-to-action h1 {
+    text-transform: uppercase;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
+}
+
+#quality {
+    max-width: 800px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    padding: 50px 0px;
+
+    button {
+        width: 35%;
+        padding: 10px 30px;
+        background-color: #e91e63;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+    }   
+}
+
+.quality-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quality-text h1{
+    padding-bottom: 10px;
+}
+
+.quality-text p{
+    color: #777;
+    padding-right: 35px;
+}
+
+.services {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.services-element {
+    width: 33.3%;
+    height: 350px;
+    flex-direction: column-reverse;
+    text-align: center;
+    display: flex;
+    color: white;
+    background-size: cover;
+}
+
+.services-element div{
+    height: 25%;
+    padding-top: 10px;
+    background-color: rgba(0,0,0,0.4);
+    border-bottom: 4px solid rgb(224, 59, 59);
+}
+
+.services-element h2{
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+#service {
+    background-image: url(box1.jpg);
+}
+
+#about {
+    background-image: url(box2.jpg);
+}
+
+#team {
+    background-image: url(box3.jpg);
 }
